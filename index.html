@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Experience</a>
+  <a href="#">Education</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact me</a>
+</div>
+
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Click To Explore</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="shubham_photo.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2 style="color:white;">Shubham Dash</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Grad Strudent at University of Michigan, Ann Arbor</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ann Arbor, Michigan</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>shubhamd@umich.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(510)-378-2995</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Data Structures and Algorithms</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">80%</div>
+          </div>
+          <p>Research</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">70%</div>
+            </div>
+          </div>
+          <p>Deep Learning and Machine Learning</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Hindi</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:99%"></div>
+          </div>
+          <p>German</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Research Scientist Intern@Schlumberger Doll Research, Cambridge, MA</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - <span class="w3-tag w3-teal w3-round">Sep 2018</span></h6>
+          <p>
+            <ul>
+              <li>Working on building deep learning models to estimate the materials surrounding in an oil well, and analyze the well integrity using this information.</li>
+              <li>Using acoustic data in the form of sonic and ultrasonic data as well as spectrogram like images to build the models</li>
+              <li>Using state of the art techniques adapted from ICML 2017, 2018 and ICLR 2017 in the form of GANs and Variational Autoencoder for building generative models</li>
+              <li>Working towards filing a patent encompassing the novel deep learning used for the application.</li>
+            </ul>
+          </p>
+          <h6>Technologies used</h6>
+          <p>
+            <ul>
+              <li>Python 2.7+</li>
+              <li>Tensorflow 1.7.0+</li>
+              <li>Keras 2.2.0+</li> 
+              <li>MATLAB / Octave (for visualization)</li>
+            </ul>
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Machine Learning Intern@Indian Institute of Technology, Madras, Chennai, India</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2016 - Aug 2016</h6>
+          <p>
+          <ul>
+            <li>Developed a model based on Natural Language Processing, Machine Learning and Deep Learning to gauge the strength of the sentiment using textual features.</li>
+            <li>The techniques involved in building the model were ordinal regression and Deep Learning methods such as Recurrent Neural Networks</li>
+            <li>The dataset was collected-compiled-cleaned by me and contained 2000+ reviews scraped from Google Play Store</li>
+          </ul>
+          </p>
+          <h6>Technologies used</h6>
+          <p>
+            <ul>
+            <li>Python 2.7+</li>
+            <li>Selenium Webdriver</li>
+            <li>R</li>
+            <li>Keras 2.2.0+</li> 
+            <li>Beautiful Soup</li>
+          </ul>
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Intern@Snapdeal.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>
+          <ul>
+            <li>Developed a scraper to automate the process of categorizing the advertisements apperaing on Goolge Search results.</li>
+            <li>The advertisements were categorized into classes like organic search results, Product Listed Advertisements and SEMs and helped improve the brands visibilty on Google.</li>
+            <li>Created a communication channel between the company and the customers using third-party Whatsapp APIs and SQL database that stores consumer queries.</li>
+          </ul>
+          </p>
+          <h6>Technologies used</h6>
+          <p>
+            <ul>
+            <li>Python 2.7+</li>
+            <li>Selenium Webdriver</li>
+            <li>SQL</li>
+            <li>Yowsup</li> 
+            <li>Beautiful Soup</li>
+          </ul>
+          </p>
+          <br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Michigan, Ann Arbor:                                GPA : 3.9 / 4.0 </h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - Apr 2019</h6>
+          <p>Masters of Sciences, specializing in Signal and Image Processing and Machine Learning</p>
+          <p>Courses:
+            <ul>
+              <li>Probability and Random Processes</li>
+              <li>Linear Algebra for Machine Learning</li>
+              <li>Machine Learning</li>
+              <li>Theory of Machine Learning</li>
+              <li>Computer Vision</li>
+              <li>Large Graph Mining</li>
+            </ul>
+            </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Netaji Subhas Institute of Technology</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2013 - June 2017</h6>
+          <p>Bachelors of Engineering, Electrical Engineering</p>
+          <p>Courses:
+            <ul>
+              <li>Data Structures and Algorithms</li>
+              <li>Artificial Intelligence</li>
+              <li>Digital Signal Processing</li>
+              <li>Control Systems</li>
+              <li>Numerical Methods for Computing</li>
+            </ul>
+            </p>
+          <hr>
+        </div>
+    <!-- End Right Column -->
+    </div>
+
+    <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Optimization Deep Learning using Sketching</h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Apr 2018</h6>
+          <p>
+            <ul>
+              <li>Probability and Random Processes</li>
+              <li>Linear Algebra for Machine Learning</li>
+              <li>Machine Learning</li>
+              <li>Theory of Machine Learning</li>
+              <li>Computer Vision</li>
+              <li>Large Graph Mining</li>
+            </ul>
+            </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Netaji Subhas Institute of Technology</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2013 - June 2017</h6>
+          <p>Bachelors of Engineering, Electrical Engineering</p>
+          <p>Courses:
+            <ul>
+              <li>Data Structures and Algorithms</li>
+              <li>Artificial Intelligence</li>
+              <li>Digital Signal Processing</li>
+              <li>Control Systems</li>
+              <li>Numerical Methods for Computing</li>
+            </ul>
+            </p>
+          <hr>
+        </div>
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>thr
+</footer>
+
+</body>
+</html>
